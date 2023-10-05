@@ -200,6 +200,16 @@ p{
 .features-h{
     margin-bottom: 8px;
 }
+.icons-features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: var(--cloud);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    
+}
 .main-header{
     font-weight: 500;
     font-size: 20px;
