@@ -15,6 +15,7 @@
 }
 .header{
     border-bottom: 1px solid var(--cornflower);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container-header{
     display: flex;
@@ -31,6 +32,9 @@
 .nav{
     display: flex;
     align-items: center;
+    position: relative;
+    color: var(--ocean);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -60,6 +64,15 @@
 .mailph:hover,
 .mailph:focus{
     color: var(--ocean);
+}
+.nav-item:hover::after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--ocean);
+    border-radius: 2px;
 }
 
 .mailph{
