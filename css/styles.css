@@ -66,7 +66,7 @@
 .mailph:focus{
     color: var(--ocean);
 }
-.nav-item:hover::after{
+.nav-item::after:hover{
     content: '';
     position: absolute;
     left:0;
@@ -143,8 +143,14 @@ p{
         /* section styles */
 
 .hero{
-    background-color: var(--navyblue);
+
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 .hero .container{
     margin-left: 472px;
@@ -173,6 +179,7 @@ p{
     cursor: pointer;
     margin-left: 164px;
     margin-top: 48px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btnservice:hover,
 .btnservice:focus{
