@@ -45,12 +45,23 @@
     margin-right: 76px;
 
 }
+.header-pseudo{
+    position: relative;
+    color: var(--ocean);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.header-pseudo::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    border-color: var(--ocean);
+    border-radius: 2px;
+}
 .menu-li{
     display: flex;
     gap: 40px;
-    position: relative;
-    color: var(--ocean);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-item{
     font-weight: 500;
@@ -66,15 +77,7 @@
 .mailph:focus{
     color: var(--ocean);
 }
-.nav-item::after:hover{
-    content: '';
-    position: absolute;
-    left:0;
-    bottom: -1px;
-    height: 4px;
-    background-color: var(--ocean);
-    border-radius: 2px;
-}
+
 
 .mailph{
     line-height: 1.5;
